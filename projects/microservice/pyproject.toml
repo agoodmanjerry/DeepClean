@@ -86,8 +86,8 @@ export_endpoint = "${base.export_endpoint}"
 
 # data parameters
 channels = "${base.channels}"
-train_duration = 2048
-retrain_cadence = 1024
+train_duration = 4096
+retrain_cadence = 2048
 sample_rate = "${base.sample_rate}"
 valid_frac = 0.25
 
