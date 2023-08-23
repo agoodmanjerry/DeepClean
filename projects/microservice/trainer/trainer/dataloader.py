@@ -39,7 +39,11 @@ def collect_frames(
     # set up some parameters to inspect the
     # interferometer state vector
     ifo = channels[0].split(":")[0]
-    state = f"{ifo}:GDS-CALIB_STATE_VECTOR"
+    if ifo == ('H1' or 'L1'):
+        state = f"{ifo}:GDS-CALIB_STATE_VECTOR"
+    elif ifo == 'K1':
+        state = f"{ifo}:GRD-IFO_STATE_N"
+
     collecting = True
 
     while not event.is_set():
@@ -55,7 +59,10 @@ def collect_frames(
         # previous non-dropped frame
         if strain_fname.exists():
             state_vector = read_channel(strain_fname, state).value
-            ready = ((state_vector & 3) == 3).all()
+            if ifo == ('H1' or 'L1'):
+                ready = ((state_vector & 3) == 3).all()
+            elif ifo == 'K1':
+                ready = (state_vector == 1000).all()
 
         if not ready and collecting:
             logger.warning(

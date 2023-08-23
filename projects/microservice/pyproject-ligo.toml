@@ -21,59 +21,50 @@ inference_batch_size = 128
 verbose = false
 
 [tool.typeo.base.channels]
-# H1 = """\
-#    H1:GDS-CALIB_STRAIN,\
-#    H1:PEM-CS_MAINSMON_EBAY_1_DQ,\
-#    H1:ASC-INP1_P_OUT_DQ,\
-#    H1:ASC-INP1_Y_OUT_DQ,\
-#    H1:ASC-MICH_P_OUT_DQ,\
-#    H1:ASC-MICH_Y_OUT_DQ,\
-#    H1:ASC-PRC1_P_OUT_DQ,\
-#    H1:ASC-PRC1_Y_OUT_DQ,\
-#    H1:ASC-PRC2_P_OUT_DQ,\
-#    H1:ASC-PRC2_Y_OUT_DQ,\
-#    H1:ASC-SRC1_P_OUT_DQ,\
-#    H1:ASC-SRC1_Y_OUT_DQ,\
-#    H1:ASC-SRC2_P_OUT_DQ,\
-#    H1:ASC-SRC2_Y_OUT_DQ,\
-#    H1:ASC-DHARD_P_OUT_DQ,\
-#    H1:ASC-DHARD_Y_OUT_DQ,\
-#    H1:ASC-CHARD_P_OUT_DQ,\
-#    H1:ASC-CHARD_Y_OUT_DQ,\
-#    H1:ASC-DSOFT_P_OUT_DQ,\
-#    H1:ASC-DSOFT_Y_OUT_DQ,\
-#    H1:ASC-CSOFT_P_OUT_DQ,\
-#    H1:ASC-CSOFT_Y_OUT_DQ\
-#"""
-#L1 = """\
-#    L1:GDS-CALIB_STRAIN,\
-#    L1:PEM-CS_MAINSMON_EBAY_1_DQ,\
-#    L1:ASC-CHARD_P_OUT_DQ,\
-#    L1:ASC-CHARD_Y_OUT_DQ,\
-#    L1:ASC-CSOFT_P_OUT_DQ,\
-#    L1:ASC-DHARD_P_OUT_DQ,\
-#    L1:ASC-DHARD_Y_OUT_DQ,\
-#    L1:ASC-DSOFT_P_OUT_DQ,\
-#    L1:ASC-INP1_P_OUT_DQ,\
-#    L1:ASC-MICH_P_OUT_DQ,\
-#    L1:ASC-MICH_Y_OUT_DQ,\
-#    L1:ASC-PRC1_P_OUT_DQ,\
-#    L1:ASC-PRC1_Y_OUT_DQ,\
-#    L1:ASC-PRC2_P_OUT_DQ,\
-#    L1:ASC-PRC2_Y_OUT_DQ,\
-#    L1:ASC-SRC1_P_OUT_DQ,\
-#    L1:ASC-SRC1_Y_OUT_DQ,\
-#    L1:ASC-SRC2_P_OUT_DQ,\
-#    L1:ASC-SRC2_Y_OUT_DQ,\
-#"""
-K1 = """\
-    K1:CAL-CS_PROC_DARM_STRAIN_DBL_DQ,\
-    K1:PEM-VOLT_IMCREFL_TABLE_GND_OUT_DQ,\
-    K1:PEM-VOLT_ISS_TABLE_GND_OUT_DQ,\
-    K1:PEM-VOLT_PSL_TABLE_GND_OUT_DQ,\
-    K1:PEM-VOLT_REFL_TABLE_GND_OUT_DQ,\
-    K1:PEM-VOLT_AS_TABLE_GND_OUT_DQ,\
-    K1:PEM-VOLT_OMC_CHAMBER_GND_OUT_DQ,\
+H1 = """\
+    H1:GDS-CALIB_STRAIN,\
+    H1:PEM-CS_MAINSMON_EBAY_1_DQ,\
+    H1:ASC-INP1_P_OUT_DQ,\
+    H1:ASC-INP1_Y_OUT_DQ,\
+    H1:ASC-MICH_P_OUT_DQ,\
+    H1:ASC-MICH_Y_OUT_DQ,\
+    H1:ASC-PRC1_P_OUT_DQ,\
+    H1:ASC-PRC1_Y_OUT_DQ,\
+    H1:ASC-PRC2_P_OUT_DQ,\
+    H1:ASC-PRC2_Y_OUT_DQ,\
+    H1:ASC-SRC1_P_OUT_DQ,\
+    H1:ASC-SRC1_Y_OUT_DQ,\
+    H1:ASC-SRC2_P_OUT_DQ,\
+    H1:ASC-SRC2_Y_OUT_DQ,\
+    H1:ASC-DHARD_P_OUT_DQ,\
+    H1:ASC-DHARD_Y_OUT_DQ,\
+    H1:ASC-CHARD_P_OUT_DQ,\
+    H1:ASC-CHARD_Y_OUT_DQ,\
+    H1:ASC-DSOFT_P_OUT_DQ,\
+    H1:ASC-DSOFT_Y_OUT_DQ,\
+    H1:ASC-CSOFT_P_OUT_DQ,\
+    H1:ASC-CSOFT_Y_OUT_DQ\
+"""
+L1 = """\
+    L1:GDS-CALIB_STRAIN,\
+    L1:PEM-CS_MAINSMON_EBAY_1_DQ,\
+    L1:ASC-CHARD_P_OUT_DQ,\
+    L1:ASC-CHARD_Y_OUT_DQ,\
+    L1:ASC-CSOFT_P_OUT_DQ,\
+    L1:ASC-DHARD_P_OUT_DQ,\
+    L1:ASC-DHARD_Y_OUT_DQ,\
+    L1:ASC-DSOFT_P_OUT_DQ,\
+    L1:ASC-INP1_P_OUT_DQ,\
+    L1:ASC-MICH_P_OUT_DQ,\
+    L1:ASC-MICH_Y_OUT_DQ,\
+    L1:ASC-PRC1_P_OUT_DQ,\
+    L1:ASC-PRC1_Y_OUT_DQ,\
+    L1:ASC-PRC2_P_OUT_DQ,\
+    L1:ASC-PRC2_Y_OUT_DQ,\
+    L1:ASC-SRC1_P_OUT_DQ,\
+    L1:ASC-SRC1_Y_OUT_DQ,\
+    L1:ASC-SRC2_P_OUT_DQ,\
+    L1:ASC-SRC2_Y_OUT_DQ,\
 """
 
 
@@ -86,8 +77,8 @@ export_endpoint = "${base.export_endpoint}"
 
 # data parameters
 channels = "${base.channels}"
-train_duration = 2048
-retrain_cadence = 1024
+train_duration = 4096
+retrain_cadence = 2048
 sample_rate = "${base.sample_rate}"
 valid_frac = 0.25
 
