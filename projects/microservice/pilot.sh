@@ -28,4 +28,4 @@ tmux split-window -h "
 tmux split-window -v "PROJECT=cleaner pinto -p cleaner run -e /home/kamalan/DeepClean/projects/.env clean --typeo pyproject.toml script=clean"
 
 # Run monitor
-tmux split-window -v "PROJECT=monitor pinto -p monitor run -e /home/kamalan/DeepClean/projects/.env clean --typeo pyproject.toml script=monitor"
+tmux split-window -v "PROJECT=monitor pinto -p monitor run -e /home/kamalan/DeepClean/projects/.env monitor --typeo pyproject.toml script=monitor"
