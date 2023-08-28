@@ -19,7 +19,7 @@ tmux split-window -h "
     CUDA_VISIBLE_DEVICES=1 singularity exec \
         --nv /home/kamalan/triton/tritonserver.sif \
         /opt/tritonserver/bin/tritonserver \
-            --model-repository /home/kamalan/deepclean/model_repo \
+            --model-repository ${HOME}/deepclean/model_repo \
             --model-control-mode poll \
             --repository-poll-secs 10 \
 "
